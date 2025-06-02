@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>dessert</title>
+    <style>
+       body {
+        background-image: url('background dessert.jpg');
+        background-size: cover;
+        background-position: center;
+       }
+       .banner {
+        margin-right: 100px;
+       }
+       .bar {
+        overflow: hidden;
+        background-color: darksalmon;
+       }
+       .bar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-style: solid pink;
+       }
+       .bar a:hover {
+        background-color: indianred;
+        color: black;
+       }
+       .form {
+        align-items: center;
+        outline: auto;
+        width: 300px;
+        background-color: darksalmon;
+        padding: 10px;
+       }
+       .dessert-menu {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        gap: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        background-color: darksalmon;
+        padding: 10px;
+        overflow-x: auto; 
+       }
+       .dessert-item {
+        background-color: #f8bda9;
+        border-radius: 15px;
+        width: 200px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+       }
+       .dessert-item img {
+        width: 200px;
+        height: 150px;
+        border-radius: 15px 15px 0 0;
+        cursor: pointer;
+        object-fit: cover;
+       }
+       .dessert-item .details {
+        text-align: center;
+        margin: 8px 0;
+       }
+       .dessert-item button {
+        cursor: pointer;
+        background-color: darksalmon;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: background-color 0.3s, color 0.3s;
+       }
+       .dessert-item button:hover {
+        background-color: indianred;
+        color: black;
+       }
+       button {
+        cursor: pointer;
+       }
+       .menu {
+        text-align: center;
+        background-color: darksalmon; 
+        padding: 3px;
+       }
+       .footer {
+        text-align: center;
+        background-color: darksalmon; 
+        padding: 10px;
+       }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="Banner makanan.jpg" width="1350" height="550" alt="Banner">
+    </div>
+
+    <div class="bar">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Log in</a>
+        <a href="#">Cart</a>
+    </div>
+    <br><br>
+
+    <center>
+    <div class="form">
+        <h1>Log In</h1>
+        <form>
+            <label for="uname">Username:</label><br>
+            <input type="text" id="uname" name="uname"><br><br>
+            <label for="pword">Password:</label><br>
+            <input type="password" id="pword" name="pword"><br><br>
+            <input type="submit">
+        </form><br>
+        <p>Sila Isi Maklumat Dengan Betul</p><br><br>
+    </div>
+    </center>
+    <br><br>
+
+    <div class="menu">
+        <h2>Menu</h2>
+    </div>
+    <br>
+
+    <div class="dessert-menu">
+        <div class="dessert-item">
+            <img src="dessert1.jpg" alt="Tiramisu">
+            <div class="details">
+                <h5>Tiramisu</h5>
+                <h5 class="price">RM8</h5>
+            </div>
+            <button>Add To Cart</button>
+        </div>
+
+        <div class="dessert-item">
+            <img src="dessert2.jpg" alt="Durian creepe">
+            <div class="details">
+                <h5>Durian creepe</h5>
+                <h5 class="price">RM10</h5>
+            </div>
+            <button>Add To Cart</button>
+        </div>
+
+         <div class="dessert-item">
+            <img src="dessert3.jpg" alt="Durian creepe">
+            <div class="details">
+                <h5>Chocolate Vanila Milkshake</h5>
+                <h5 class="price">RM10</h5>
+            </div>
+            <button>Add To Cart</button>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="footer">
+        <p>Copyright @ Sweetbites 2025</p>
+    </div>
+</body>
+</html>
+
